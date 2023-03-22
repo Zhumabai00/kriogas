@@ -1,0 +1,67 @@
+@media (max-width: 900px) {
+	.project-body {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 35px;
+	}
+	.project-content {
+		width: 80%;
+	}
+	.project-image {
+		width: 80%;
+	}
+	.cards-body {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 40px;
+	}
+	.cards-body-card {
+		width: 80%;
+	}
+	.banner {
+		height: 70vh;
+	}
+	.navigation {
+    position: relative;
+    order: -1;
+  }
+	.nav-menu {
+    position: absolute;
+    flex-direction: column;
+    row-gap: 10px;
+    top: 35px;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+  }
+	.burger-btn {
+		display: flex;
+		width: 40px;
+		height: 4px;
+		align-items: center;
+	}
+	.burger-btn > span::before,
+	.burger-btn > span::after,
+	.burger-btn > span
+	{
+		content: "";
+		height: 4px;
+		width: 100%;
+		background-color: #FFFFFF;
+		position: relative;
+	}
+	.burger-btn > span::before
+	{
+		position: absolute;
+		top: -10px;
+	}
+	.burger-btn > span::after
+	{
+		position: absolute;
+		bottom: -10px;
+	}
+
+}
+.active {
+  height: 150px;
+}
